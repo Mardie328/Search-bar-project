@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace ;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: url(pexels-zeeshaan-shabbir-10060702.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 300px;
+    height: 31px;
+    max-width: 700px;
+    background: white;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(100%);
+}
+@media (min-width: 765px){
+    .search-bar{
+        width: 320px;
+        height: 40px;
+    }
+}
+.search-bar input{
+    background:transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20;
+    color: #c0c7ff;
+} 
+
+::placeholder{
+    color:#9398b8;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #e7e8ef;
+    cursor: pointer;
+}
